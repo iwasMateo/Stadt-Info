@@ -1,1 +1,20 @@
-#headers
+#headerid {
+    flex-wrap: nowrap;
+    display: flex;
+    gap: 20px;
+    background-color: #daebf0;
+}
+#headerid a {
+    text-decoration: none;
+}
+#headerid div {
+    display:flex;
+    flex-wrap: nowrap;
+    border-right: solid 2px #696969;
+    padding-right: 20px;
+    gap: 10px;
+}
+#headerid div img {
+    width: 20vw;
+    height: 10vh;
+}
