@@ -1,9 +1,9 @@
 #kontakt div img {
-    width: 20%;
+    width: 25vh;
     height: 35vh;
 }
 #kontakt div button {
-    width: 20%;
+    width: 25vh;
     height:35vh;
 }
 #kontakt div button img {
@@ -12,7 +12,22 @@
 }
 #kontakt div {
     background-color: antiquewhite;
+    width: 400px;
+    text-align: center;
+    padding: 5px;
+    border: 2px solid #000;
+    margin: 5px;
+    border-radius: 10px;
+}
+#kontakt div div {
+    border:none;
+    width: 390px;
 }
 #kontakt {
-    background-image: url('bg.jpg') ;
+    display: flex;
+    flex-direction: column;  /* stack children vertically */
+    align-items: center;     /* horizontal centering */
+}
+body {
+    background-image: url(bg.jpg);
 }

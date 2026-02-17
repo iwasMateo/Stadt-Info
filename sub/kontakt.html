@@ -16,7 +16,7 @@
             <h1>Tjark Neumann</h1>
             <h2>Bürgermeister</h2>
             <p>Tjark Neumann wurde am 17.02.2026 zum Bürgermeister ernannt.</p> 
-            <p> Seit dem hat er Brolen exzellent verwaltet und auferhalten.</p>
+            <p> Seit dem hat er Borlean exzellent verwaltet und auferhalten.</p>
         </div>
         <div>
             <button onclick="bildwechsel1()">
@@ -25,7 +25,7 @@
             <div>
             <h1>Jakob Viehhauser</h1>
             <h2>Stadtplaner</h2>
-            <p>Jakob ist seit Anfang der Stadt Brolen der Stadtplaner und hat seitdem bei dem Neuaufbau der Kneipe und vielem mehr mitgeholfen.</p>
+            <p>Jakob ist seit Anfang der Stadt Borlean der Stadtplaner und hat seitdem bei dem Neuaufbau der Kneipe und vielem mehr mitgeholfen.</p>
             </div>
         </div>
         <div>
@@ -34,7 +34,7 @@
             </button>
             <h1>Mateo Hopfe</h1>
             <h2>Stadtplaner</h2>
-            <p>Mateo hat wie Jakob Viehhauser seit Anfang Brolens als Stadtplaner gearbeitet und hat bei dem Aufbau der Pizzeria und auch vielem Mehr mitgeholfen.</p>
+            <p>Mateo hat wie Jakob Viehhauser seit Anfang Borleans als Stadtplaner gearbeitet und hat bei dem Aufbau der Pizzeria und auch vielem Mehr mitgeholfen.</p>
         </div>
         <p>
             Wir haben Erlaubnis aller Personen, die auf dieser Seite gennant, gezeigt oder dargestellt werden bekommen.
@@ -44,10 +44,18 @@
             let rickim = document.getElementById("Rickroll");
             let matim = document.getElementById("Mateo")
             function bildwechsel1() {
-                rickim.src = "rickastley.jpeg"; 
+                if (rickim.src.endsWith("Jakob.jpeg")) {
+                    rickim.src = "rickastley.jpeg"; 
+                } else {
+                    rickim.src = "Jakob.jpeg";
+                }
             }
             function bildwechsel2() {
-                matim.src = "Jakob.jpeg";
+                if (matim.src.endsWith("Mateo.jpeg")) {
+                    matim.src = "Jakob.jpeg";
+                } else {
+                    matim.src = "Mateo.jpeg";
+                }
             }
         </script>
         </div>
