@@ -1,0 +1,52 @@
+<html>
+    <header>
+        <link rel="stylesheet" href="headerstyle.css">
+        <link rel="stylesheet" href="substyle.css">
+    </header>
+        <body>
+        <div id="headerid"></div>
+        <script src="headerjs.js"></script>
+        <h1>
+            Kontakte
+        </h1>
+        <p>Hier sind alle Kontake zu wichtigen Personen und Entwicklern dieser Website</p>
+        <div id="kontakt">
+        <div>
+            <img src="Tjark.jpeg" alt="Bild Mit Tjark drauf">
+            <h1>Tjark Neumann</h1>
+            <h2>Bürgermeister</h2>
+            <p>Tjark Neumann wurde am 17.02.2026 zum Bürgermeister ernannt.</p> 
+            <p> Seit dem hat er Brolen exzellent verwaltet und auferhalten.</p>
+        </div>
+        <div>
+            <button onclick="bildwechsel1()">
+            <img id="Rickroll" src="Jakob.jpeg" alt="Jakob">
+            </button>
+            <h1>Jakob Viehhauser</h1>
+            <h2>Stadtplaner</h2>
+            <p>Jakob ist seit Anfang der Stadt Brolen der Stadtplaner und hat seitdem bei dem Neuaufbau der Kneipe und vielem mehr mitgeholfen.</p>
+        </div>
+        <div>
+            <button onclick="bildwechsel2()">
+                <img id="Mateo"src="Mateo.jpeg" alt="Bild von Mateo">
+            </button>
+            <h1>Mateo Hopfe</h1>
+            <h2>Stadtplaner</h2>
+            <p>Mateo hat wie Jakob Viehhauser seit Anfang Brolens als Stadtplaner gearbeitet und hat bei dem Aufbau der Pizzeria und auch vielem Mehr mitgeholfen.</p>
+        </div>
+
+        <script>
+            let rickim = document.getElementById("Rickroll");
+            let matim = document.getElementById("Mateo")
+            function bildwechsel1() {
+                rickim.src = "rickastley.jpeg"; 
+            }
+            function bildwechsel2() {
+                matim.src = "Jakob.jpeg";
+            }
+        </script>
+        </div>
+    </body>
+</html>
+
+
