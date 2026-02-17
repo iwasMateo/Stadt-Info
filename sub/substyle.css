@@ -10,3 +10,9 @@
     width: 100%;
     height: 100%;
 }
+#kontakt div {
+    background-color: antiquewhite;
+}
+#kontakt {
+    background-image: url('bg.jpg') ;
+}
