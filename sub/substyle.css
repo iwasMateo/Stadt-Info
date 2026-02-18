@@ -1,16 +1,16 @@
-#kontakt div img {
+.kontakt div img {
     width: 25vh;
     height: 35vh;
 }
-#kontakt div button {
+.kontakt div button {
     width: 25vh;
     height:35vh;
 }
-#kontakt div button img {
+.kontakt div button img {
     width: 100%;
     height: 100%;
 }
-#kontakt div {
+.kontakt div {
     background-color: antiquewhite;
     width: 400px;
     text-align: center;
@@ -19,15 +19,16 @@
     margin: 5px;
     border-radius: 10px;
 }
-#kontakt div div {
+.kontakt div div {
     border:none;
     width: 390px;
 }
-#kontakt {
+.kontakt {
     display: flex;
     flex-direction: column;  /* stack children vertically */
     align-items: center;     /* horizontal centering */
+    background-image: url(bg.jpg);
 }
 body {
-    background-image: url(bg.jpg);
+    background-color: aliceblue;
 }
