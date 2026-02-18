@@ -32,3 +32,40 @@
 body {
     background-color: aliceblue;
 }
+.attraktion {
+    display: flex;
+    flex-wrap: wrap;
+}
+.attraktion > div {
+    border: 2px solid;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    margin: 4px;
+    padding: 6px;
+    height: 20vh;
+    width: 50vh;
+    display: flex;
+    justify-content: center;
+}
+.attraktion div div {
+    border-left:#000 solid 2px;
+    padding-left: 20px;
+}
+.attraktion div h1 {
+    border-bottom: solid 2px #696969;
+    text-align: right;
+    height: 40px;
+}
+.attraktion a {
+    text-decoration: none;
+    color: #000;
+}
+.attraktion div img {
+    height: 100%;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+
+.attraktion div:hover {
+  transform: scale(1.05) translateY(3%);
+}
