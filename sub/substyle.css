@@ -44,7 +44,7 @@ body {
     padding: 6px;
     padding-right: 8px;
     height: 20vh;
-    width: 50vh;
+    width: 60vh;
     display: flex;
     justify-content: center;
 }
@@ -74,27 +74,42 @@ body {
 
 .attraktion button > div:hover {
   transform: scale(1.05) translateY(3%);
+  cursor: pointer;
 }
 .big {
     border: 2px solid;
     border-bottom-left-radius: 25px;
     border-top-right-radius: 25px;
+    background-color: aliceblue;
     margin: 4px;
     padding: 6px;
     padding-right: 8px;
     height: 60vh;
     width: 80vh;
-    display: flex;
+    display: none;
     justify-content: center;
 }
 .big img {
-    width: 50%;
-    height: 60%;
+    height: 90%;
+    overflow-x: hidden;
 }
 .big div {
+    width: 40vw;
     margin: 8px;
     padding:6px;
 }
 .big div h1 {
     border-bottom: #000 2px solid;
+}
+#disclaimer {
+    margin: 30px;
+    color: #000;
+    text-align: center;
+}
+#disclaimer p {
+    width: 30vw;
+    background-color: antiquewhite;
+    border: none;
+    border-radius: 10px;
+    margin: 10px auto;
 }
