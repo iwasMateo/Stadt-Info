@@ -91,6 +91,8 @@ body {
 }
 .big img {
     height: 90%;
+    width: 50%;
+    object-fit: cover;
     overflow-x: hidden;
 }
 .big div {
