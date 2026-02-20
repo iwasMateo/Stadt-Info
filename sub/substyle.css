@@ -36,36 +36,65 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
-.attraktion > div {
+.small {
     border: 2px solid;
     border-bottom-left-radius: 25px;
     border-top-right-radius: 25px;
     margin: 4px;
     padding: 6px;
+    padding-right: 8px;
     height: 20vh;
     width: 50vh;
     display: flex;
     justify-content: center;
 }
-.attraktion div div {
-    border-left:#000 solid 2px;
-    padding-left: 20px;
+.attraktion button {
+    border:none;
+    background-color: aliceblue;
 }
-.attraktion div h1 {
+.small div {
+    border-left:#000 solid 2px;
+    padding-left: 25px;
+}
+.small h1 {
     border-bottom: solid 2px #696969;
     text-align: right;
     height: 40px;
+    text-wrap: nowrap;
 }
 .attraktion a {
     text-decoration: none;
     color: #000;
 }
-.attraktion div img {
+.small img {
     height: 100%;
     border-radius: 25px;
     margin-right: 10px;
 }
 
-.attraktion div:hover {
+.attraktion button > div:hover {
   transform: scale(1.05) translateY(3%);
+}
+.big {
+    border: 2px solid;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    margin: 4px;
+    padding: 6px;
+    padding-right: 8px;
+    height: 60vh;
+    width: 80vh;
+    display: flex;
+    justify-content: center;
+}
+.big img {
+    width: 50%;
+    height: 60%;
+}
+.big div {
+    margin: 8px;
+    padding:6px;
+}
+.big div h1 {
+    border-bottom: #000 2px solid;
 }
