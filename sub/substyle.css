@@ -35,6 +35,7 @@ body {
 .attraktion {
     display: flex;
     flex-wrap: wrap;
+    z-index: 1;
 }
 .small {
     border: 2px solid;
@@ -44,9 +45,10 @@ body {
     padding: 6px;
     padding-right: 8px;
     height: 20vh;
-    width: 60vh;
+    width: 40vh;
     display: flex;
     justify-content: center;
+    /*overflow-x:scroll;*/
 }
 .attraktion button {
     border:none;
@@ -54,20 +56,22 @@ body {
 }
 .small div {
     border-left:#000 solid 2px;
-    padding-left: 25px;
+    padding-left: 10px;
+
 }
 .small h1 {
     border-bottom: solid 2px #696969;
     text-align: right;
-    height: 40px;
-    text-wrap: nowrap;
+    width: 60%;
+    text-wrap: wrap;
 }
 .attraktion a {
     text-decoration: none;
     color: #000;
 }
 .small img {
-    height: 100%;
+    height: 70%;
+    aspect-ratio: 1/1;
     border-radius: 25px;
     margin-right: 10px;
 }
@@ -115,4 +119,19 @@ body {
 #disclaimer p {
     width: 30vw;
     margin: 10px auto;
+}
+#popup {
+    position: absolute;
+    z-index: 2;
+    width: 100vw;
+    height: 90vh;
+    margin-top: 25px;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    opacity: 0.5;
+    top: 20px;
+}
+#popup div {
+    opacity: 1;
 }

@@ -7,8 +7,26 @@
         <div id="headerid"></div>
         <script src="headerjs.js"></script>
         <h1>Attraktionen</h1>
+        <!--
+        <div id="popup" style="display:none;">
+             <button class="attraktion-button" id="spiegelarchiv" onclick="popwechsel('spiegelarchiv')">
+                <div class="big" style="display: block;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Spiegel_mit_zwei_Putten_19Jh_%2801%29.jpg" alt="Bild des Spiegelarchivs">
+                    <div>
+                        <h1>Spiegelarchiv</h1>
+                        <p>Das Spiegelarchiv beherbergt eine einzigartige Sammlung von Spiegeln aus verschiedenen Jahrhunderten. Jeder Spiegel wurde sorgfältig restauriert und ausgestellt.</p>
+                        <p>Die Ausstellung zeigt die Entwicklung von Materialien, Formen und Herstellungstechniken über die Zeit hinweg.</p>
+                        <p>Besucher können mehr über die kulturelle Bedeutung von Spiegeln in verschiedenen Epochen erfahren.</p>
+                        <h3>Adresse:</h3>
+                        <p>Reflexionsplatz 2, 54221 Borlean</p>
+                        <h3>Telefon-nummer</h3>
+                        <p>+49 1636651289</p>
+                    </div>
+                </div>
+            </button>
+        </div> -->
         <div class="attraktion">
-            <button id="pizza" onclick="grosswechsel('pizza')">
+            <button  class="attraktion-button" id="pizza" onclick="grosswechsel('pizza')">
                 <div class="small">
                 
                     <img src="pizza.png">
@@ -32,7 +50,7 @@
                     </div>
                 </div>
             </button>
-            <button id="brauerei" onclick="grosswechsel('brauerei')">
+            <button class="attraktion-button" id="brauerei" onclick="grosswechsel('brauerei')">
                 <div class="small">
                     <img src="images.jpg" alt="Bier logo">
                     <div>
@@ -55,7 +73,7 @@
                     </div>
                 </div>
             </button>
-            <button id="park" onclick="grosswechsel('park')">
+            <button class="attraktion-button" id="park" onclick="grosswechsel('park')">
                 <div class="small">
                     <img src="images.jpg" alt="Natur logo">
                     <div>
@@ -78,11 +96,11 @@
                     </div>
                 </div>
             </button>
-            <button id="observatorium" onclick="grosswechsel('observatorium')">
+            <button class="attraktion-button" id="observatorium" onclick="grosswechsel('observatorium')">
                 <div class="small">
                     <img src="observatorium-klein.png" alt="Observatorium Logo">
                     <div>
-                        <h1>Observatorium</h1>
+                        <h1>Obser vatorium</h1>
                         <p>Alte Sternwarte mit öffnender Kuppel</p>
                         <p>Adresse: Himmelspfad 7</p>
                     </div>
@@ -101,7 +119,7 @@
                 </div>
             </button>
 
-            <button id="tunnelmuseum" onclick="grosswechsel('tunnelmuseum')">
+            <button class="attraktion-button" id="tunnelmuseum" onclick="grosswechsel('tunnelmuseum')">
                 <div class="small">
                     <img src="museum-klein.png" alt="Tunnelmuseum Logo">
                     <div>
@@ -153,7 +171,7 @@
                 </div>
             </button>
             -->
-            <button id="sendeturm" onclick="grosswechsel('sendeturm')">
+            <button  class="attraktion-button" id="sendeturm" onclick="grosswechsel('sendeturm')">
                 <div class="small">
                     <img src="https://freesvg.org/img/Fernsehturm.png" alt="Sendeturm Logo">
                     <div>
@@ -177,7 +195,7 @@
                 </div>
             </button>
 
-            <button id="spiegelarchiv" onclick="grosswechsel('spiegelarchiv')">
+            <button class="attraktion-button" id="spiegelarchiv" onclick="grosswechsel('spiegelarchiv')">
                 <div class="small">
                     <img src="https://freesvg.org/img/Miroir-ovale.png" alt="Spiegelarchiv Logo">
                     <div>
@@ -186,6 +204,7 @@
                         <p>Adresse: Reflexionsplatz 2</p>
                     </div>
                 </div>
+                <!--
                 <div class="big">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Spiegel_mit_zwei_Putten_19Jh_%2801%29.jpg" alt="Bild des Spiegelarchivs">
                     <div>
@@ -200,7 +219,7 @@
                     </div>
                 </div>
             </button>
-
+        -->
         </div>
         <div id="disclaimer">
         <p>
@@ -215,6 +234,8 @@
         <script>
             function grosswechsel(id) {
                 console.log(arguments[0]);
+                //let popup = document.getElementById("popup");
+                //popup.style.display="flex";
                 let aenderDiv = document.getElementById(id);
                 let smallInAenderDiv = aenderDiv.querySelector(".small");
                 let bigInAenderDiv = aenderDiv.querySelector(".big");
@@ -227,6 +248,10 @@
                     bigInAenderDiv.style.display = "none";
                 }
             }
+            /* function popwechsel (id) {
+                let popup = document.getElementById
+            } */
+
         </script>
     </body>
 </html>
