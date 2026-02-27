@@ -6,8 +6,10 @@
 
 #bild-überlap-ding img {
     display: block;
-    width: auto;
+    width: 100vw;
     height: 60%;
+    overflow-y: hidden;
+    object-fit: cover;
 }
 
 #bild-überlap-ding h1 {
@@ -44,5 +46,6 @@
 
 
 .haupt-sub div:hover {
-  transform: scale(1.05);
+  transform: scale(1.10);
+  background-color: #fff;
 }
