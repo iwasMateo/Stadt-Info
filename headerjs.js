@@ -7,6 +7,6 @@ header.innerHTML = `
     </div>
     <h1><a href="sub/attraktion.html">Attraktionen</a></h1>
     <h1><a href="sub/kontakt.html">Kontakt</a></h1>
-    <h1><a href="sub/forum.html">Stellen</a></h1>
+    <h1><a href="sub/stellen.html">Stellen</a></h1>
     <link rel="stylesheet" href="headerstyle.css">
 `;
