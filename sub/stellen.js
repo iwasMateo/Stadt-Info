@@ -1,6 +1,6 @@
+let opLohn = ["22€", "25€", "27€"];
 let lohnElement = document.getElementById("Stundenlohn"); //finde den Tag
-let lohn = lohn.innerText; // der text im element
-let opLohn = ["22€", "25€", "27€"]; // Löhne, die man haben kann
+let lohn = lohnElement.innerText; // der text im element // Löhne, die man haben kann
 function changeStunden(type) {
     if (opLohn.includes(lohn)) { // falls der lohn in den optionen für lohn ist, dann:
         if (type === "add") { // falls der angegebene typ "add" ist, dann:
@@ -22,6 +22,6 @@ function changeStunden(type) {
         }
     }else { // falls es nd da drin ist, dann 
         index = 1;
-        lohnElement.innerText = opLohn[1]; // setzt es zu opLohn [1](der standard)
+        lohnElement.innerText = opLohn[1]; // setzt es zu opLohn[1](der standard)
     }
 }
