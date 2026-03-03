@@ -28,6 +28,14 @@
                 font-size: large;
                 width: fit-content;
             }
+            .lohndiv {
+                display:flex;
+                height:5vh;
+            }
+             .lohndiv button {
+                height: 100%;
+                aspect-ratio: 1/1;
+             }
         </style>
         <class id="headerid"></class>
         <script src="headerjs.js"></script>
@@ -41,7 +49,7 @@
                 <p>Offene stellen: 2</p>
                 <div>
                     <p>Stunden Pro woche</p>
-                    <div>
+                    <div class="lohndiv">
                         <button onclick="changeStunden('subtract')">-</button>
                         <p id="Stunden">40h</p>
                         <button onclick="changeStunden('add')">+</button>
