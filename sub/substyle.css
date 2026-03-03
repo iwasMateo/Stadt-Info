@@ -1,21 +1,21 @@
-.kontakt div img {
+.kontakt div img { /* Regeln für bilder auf der Kontakt seite */
     width: 25vh;
     height: 35vh;
 }
-.kontakt div button {
+.kontakt div button { /* Regeln für die knöpfe */
     width: 25vh;
     height:35vh;
 }
-.kontakt div button img {
+.kontakt div button img { /* Regeln für die bilder in den Knöpfen */
     width: 100%;
     height: 100%;
 }
-.kontakt div {
+.kontakt div { /* Regeln für die div an sich */
     background-color: antiquewhite;
     width: 400px;
-    text-align: center;
+    text-align: center; /* Text soll in der Mitte sein */
     padding: 5px;
-    border: 2px solid #000;
+    border: 2px solid #000; /* Kleine border, weils gut aussieht */
     margin: 5px;
     border-radius: 10px;
 }
@@ -25,17 +25,17 @@
 }
 .kontakt {
     display: flex;
-    flex-direction: column;  /* stack children vertically */
-    align-items: center;     /* horizontal centering */
-    background-image: url(bg.jpg);
+    flex-direction: column;  /* mach es trotz flex vertikal */
+    align-items: center;     /* Immer noch in die mitte packen (warum ist das bei divs immer so verdammmt schwer) */
+    background-image: url(bg.jpg); /* den Hintergrund setzen (ändern wir vielleicht noch) */
 }
 body {
-    background-color: aliceblue;
+    background-color: aliceblue; /* genereller Hintergrund bei sachen wo das nicht extra angegeben wird */
 }
 .attraktion {
-    display: flex;
-    flex-wrap: wrap;
-    z-index: 1;
+    display: flex; /* Alles in einem schönen grid artigem ding listen */
+    flex-wrap: wrap; /* Wrap erlauben */
+    z-index: 1; /* ich weiß nich mehr warum das hier ist */
 }
 .small {
     border: 2px solid;
@@ -46,27 +46,28 @@ body {
     padding-right: 8px;
     height: 20vh;
     width: 40vh;
-    display: flex;
+    display: flex; /* so machen, dass die elemente nebeneinander angezeigt werden */
     justify-content: center;
-    /*overflow-x:scroll;*/
+    /*overflow-x:scroll;*/ /* Das erlaubt ein fragwürdiges seitwärts scrollen */
 }
 .attraktion button {
     border:none;
     background-color: aliceblue;
 }
+/* Styl angaben für die kleine div bei attraktionen */
 .small div {
     border-left:#000 solid 2px;
     padding-left: 10px;
 
 }
-.small h1 {
+.small h1 { /* H1 stylen */
     border-bottom: solid 2px #696969;
     text-align: right;
     width: 60%;
-    text-wrap: wrap;
+    text-wrap: wrap; /* Erlaubt damit es in die div passt */
 }
 .attraktion a {
-    text-decoration: none;
+    text-decoration: none; /* Links normal aussehen lassen? Ich weiß nicht mehr wieso */
     color: #000;
 }
 .small img {
@@ -120,6 +121,7 @@ body {
     width: 30vw;
     margin: 10px auto;
 }
+/* Das popup ist basically irrelevant */
 #popup {
     position: absolute;
     z-index: 2;

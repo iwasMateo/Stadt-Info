@@ -25,7 +25,11 @@
                 </div>
             </button>
         </div> -->
-        <div class="attraktion">
+
+        <!-- Alles muss dieser struktur folgen: <div class="attraktion" id="sache" onclick"die gleiche id"> <button> <div class="small">INHALT</div> <div class="big">MEHR INHALT</div></button></div>
+        Es muss der Struktur folgen, weil es ansonsten nicht mit der Funktion grosswechsel(string) funktioniert. 
+        -->
+        <div class="attraktion"> 
             <button  class="attraktion-button" id="pizza" onclick="grosswechsel('pizza')">
                 <div class="small">
                 
@@ -230,26 +234,23 @@
         </p>
         </div>
         <script>
-            function grosswechsel(id) {
+            function grosswechsel(id) { //nimmt die id
                 console.log(arguments[0]);
                 //let popup = document.getElementById("popup");
                 //popup.style.display="flex";
-                let aenderDiv = document.getElementById(id);
-                let smallInAenderDiv = aenderDiv.querySelector(".small");
-                let bigInAenderDiv = aenderDiv.querySelector(".big");
-                let computestyleSmall = window.getComputedStyle(smallInAenderDiv);
-                if (computestyleSmall.display === "flex") {
-                    smallInAenderDiv.style.display = "none";
+                //Wir haben das popup doch weg gelassen weil es nd gut funktioniert hat
+                let aenderDiv = document.getElementById(id); // die div nimmt die id von dem onclick event und holt das element davon
+                let smallInAenderDiv = aenderDiv.querySelector(".small"); // holt die div mit der class "small" da drinne
+                let bigInAenderDiv = aenderDiv.querySelector(".big"); // gleiche sache mit big
+                let computestyleSmall = window.getComputedStyle(smallInAenderDiv); // guckt nach dem "computed style" von der kleinen div (das was wirklich verarbeitet wird)
+                if (computestyleSmall.display === "flex") { // guckt ob der display style flex ist
+                    smallInAenderDiv.style.display = "none"; //setzt es zu unsichtbar und macht groß sichtbar
                     bigInAenderDiv.style.display = "flex";
                 } else {
-                    smallInAenderDiv.style.display = "flex";
+                    smallInAenderDiv.style.display = "flex"; // gleiche sache aber halt rückwärts mein gott
                     bigInAenderDiv.style.display = "none";
                 }
             }
-            /* function popwechsel (id) {
-                let popup = document.getElementById
-            } */
-
         </script>
     </body>
 </html>

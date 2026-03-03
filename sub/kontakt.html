@@ -11,6 +11,17 @@
         </h1>
         <p>Hier sind alle Kontake zu wichtigen Personen und Entwicklern dieser Website</p>
         <div class="kontakt">
+        
+        <!--
+            Gebrauchte struktur ist: 
+            <div>
+                <img src="etwas.png"> 
+                <h1>Voller Name</h1> 
+                <h2>Titel</h2> 
+                <p>Aussage 1 </p> 
+                <p> Aussage 2 </p>
+            </div>   
+        -->
         <div>
             <img src="Tjark.jpeg" alt="Bild Mit Tjark drauf">
             <h1>Tjark Neumann</h1>
@@ -41,17 +52,17 @@
         </p>
 
         <script>
-            let rickim = document.getElementById("Rickroll");
-            let matim = document.getElementById("Mateo")
-            function bildwechsel1() {
-                if (rickim.src.endsWith("Jakob.jpeg")) {
+            let rickim = document.getElementById("Rickroll"); // holt Jakobs bild tag
+            let matim = document.getElementById("Mateo") // holt Mateos bild tag
+            function bildwechsel1() { // wenn der button gedrückt wird
+                if (rickim.src.endsWith("Jakob.jpeg")) { // einfach nur eine wechsel funktion
                     rickim.src = "rickastley.jpeg"; 
                 } else {
                     rickim.src = "Jakob.jpeg";
                 }
             }
             function bildwechsel2() {
-                if (matim.src.endsWith("Mateo.jpeg")) {
+                if (matim.src.endsWith("Mateo.jpeg")) { // gleiche funktion mit anderen Bildern & Namen
                     matim.src = "Jakob.jpeg";
                 } else {
                     matim.src = "Mateo.jpeg";
