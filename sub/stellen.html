@@ -13,12 +13,15 @@
                 border-radius: 25;
                 display:flex;
                 justify-content: center;
+                overflow-x: scroll;
+                flex-wrap: wrap;
             }
             .stellen > div {
                 border: solid 2px #000;
                 border-radius: 10px;
                 background-color: rgb(227, 229, 230);
                 width: fit-content;
+                min-width: 500px;
                 text-align: left;
                 margin: 10px;
                 padding: 4px;
@@ -30,6 +33,7 @@
             }
             .lohndiv {
                 display:flex;
+                justify-content: center;
                 height:5vh;
             }
              .lohndiv button {
@@ -70,11 +74,11 @@
                 <p>Offene stellen: 3</p>
                 <p>Stunden Pro woche</p>
                 <div class="lohndiv" >
-                    <button onclick="changeStunden('subtract', 'Kellner', ['28€', '30€', '32€'])">-</button>
+                    <button onclick="changeStunden('subtract', 'Kellner', ['30€', '32€', '34€'])">-</button>
                     <p class="Stunden">40h</p>
-                    <button onclick="changeStunden('add', 'Kellner', ['28€', '30€', '32€'])">+</button>
+                    <button onclick="changeStunden('add', 'Kellner', ['30€', '32€', '34€'])">+</button>
                 </div>
-                <p class="Stundenlohn">25€</p>
+                <p class="Stundenlohn">32€</p>
                 <h3>Qualifikationen</h3>
                 <ul>
                     <li>Lebt in der nähe der Pizzaria-Tono</li>
@@ -87,6 +91,11 @@
             <div>
                 <h2>Kellermeister*in</h2>
                 <p>Offene stellen: 1</p>
+                <p>Stunden Pro woche</p>
+                <div class="lohndiv" >
+                    <p class="Stunden">40h</p>
+                </div>
+                <p class="Stundenlohn"> 4200€ Brutto monatlich </p>
                 <h3>Qualifikationen</h3>
                 <ul>
                     <li>Du möchstest Traditionelle Braukunst erhalten</li>
@@ -95,9 +104,16 @@
                     <li>(optional) Vorkentnisse im bereich Lagerlogistik</li><!--5000€ Brutto Monatslohn -->
                 </ul>
             </div>
-            <div>
+            <div id="Sekretär">
                 <h2>Sekretär</h2>
                 <p>Offene stellen: 1</p>
+                <p>Stunden Pro woche</p>
+                <div class="lohndiv" >
+                    <button onclick="changeStunden('subtract', 'Sekretär', ['23€', '26€', '28€'])">-</button>
+                    <p class="Stunden">40h</p>
+                    <button onclick="changeStunden('add', 'Sekretär', ['23€', '26€', '28€'])">+</button>
+                </div>
+                <p class="Stundenlohn">26€</p>
                 <h3>Qualifikationen</h3>
                 <ul>
                     <li>Du kannst gut mit Papierkram umgehen</li>
@@ -105,6 +121,25 @@
                     <li>Du magst organisatorische Arbeit</li><!--30€ Stundenlohn 50 Stunden/Woche-->
                     <li>Gelegentliche Ausflüge mit dem Kollegium</li>
                     <li>Niedrigere Steuern und andere Vorteile sind enthalten<li>
+                </ul>
+            </div>
+            <div id="Standesbeamter">
+                <h2>Standesbeamter</h2>
+                <p>Offene stellen: 3</p>
+                <p>Stunden Pro woche</p>
+                <div class="lohndiv" >
+                    <button onclick="changeStunden('subtract', 'Standesbeamter', ['19€', '22€', '24€'])">-</button>
+                    <p class="Stunden">40h</p>
+                    <button onclick="changeStunden('add', 'Standesbeamter', ['19€', '22€', '24€'])">+</button>
+                </div>
+                <p class="Stundenlohn">22€</p>
+                <h3>Qualifikationen</h3>
+                <ul>
+                    <li>Du kannst gut mit Papierkram umgehen</li>
+                    <li>Du willst anderen "helfen"</li>
+                    <li>Du magst organisatorische Arbeit</li><!--30€ Stundenlohn 50 Stunden/Woche-->
+                    <li>Du bist ein Fan von Bürokratie</li>
+                    <li>Absolut keine Vorteiele, sorry<li>
                 </ul>
             </div>
         </div>
