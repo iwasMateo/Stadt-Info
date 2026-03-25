@@ -27,7 +27,7 @@
     display: flex;
     flex-direction: column;  /* mach es trotz flex vertikal */
     align-items: center;     /* Immer noch in die mitte packen (warum ist das bei divs immer so verdammmt schwer) */
-    background-image: url(bg.jpg); /* den Hintergrund setzen (ändern wir vielleicht noch) */
+    background-image: url(bg.png); /* den Hintergrund setzen (ändern wir vielleicht noch) */
 }
 body {
     background-color: aliceblue; /* genereller Hintergrund bei sachen wo das nicht extra angegeben wird */
@@ -44,8 +44,8 @@ body {
     margin: 4px;
     padding: 6px;
     padding-right: 8px;
-    height: 20vh;
-    width: 40vh;
+    height: 25vh;
+    width: 45vh;
     display: flex; /* so machen, dass die elemente nebeneinander angezeigt werden */
     justify-content: center;
     /*overflow-x:scroll;*/ /* Das erlaubt ein fragwürdiges seitwärts scrollen */
@@ -137,3 +137,55 @@ body {
 #popup div {
     opacity: 1;
 }
+#extra-info {
+    margin: 30px;
+    color: #000;
+    text-align: center;
+    background-color: antiquewhite;
+    border: solid 2px #000;
+    border-radius: 10px;
+    padding: 5px; 
+}
+.stellen {
+    background-color: aliceblue;
+    text-align: center;
+    width: auto;
+    padding: 10px;
+    border: none;
+    border-radius: 25;
+    display:flex;
+    justify-content: center;
+    overflow-x: scroll;
+    flex-wrap: wrap;
+}
+.stellen > div {
+    border: solid 2px #000;
+    border-radius: 10px;
+    background-color: rgb(227, 229, 230);
+    width: fit-content;
+    min-width: 500px;
+    text-align: left;
+    margin: 10px;
+    padding: 10px;
+} 
+#start {
+    background-color: aliceblue;
+    font-size: large;
+    width: fit-content;
+}
+.lohndiv {
+    display:flex;
+    justify-content: center;
+    height:5vh;
+    border: solid 1px #000;
+    border-radius: 5px;
+    padding: 3px;
+    background-color: rgb(247, 249, 250);
+}
+    .lohndiv button {
+    height: 100%;
+    aspect-ratio: 1/1;
+    background-color: rgb(237, 239, 240);
+    border: solid 1px #000;
+    border-radius: 5px;
+    }
