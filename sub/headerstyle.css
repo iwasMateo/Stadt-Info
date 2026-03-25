@@ -1,5 +1,7 @@
 #headerid {
     flex-wrap: nowrap;
+    position: sticky;
+    top: 0;
     display: flex;
     gap: 20px;
     background-color: #daebf0;

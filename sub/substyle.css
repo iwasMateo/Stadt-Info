@@ -10,9 +10,12 @@
     width: 100%;
     height: 100%;
 }
+.kontakt > div {
+    width: 30vw;
+    flex-shrink: 0;
+}
 .kontakt div { /* Regeln für die div an sich */
     background-color: antiquewhite;
-    width: 400px;
     text-align: center; /* Text soll in der Mitte sein */
     padding: 5px;
     border: 2px solid #000; /* Kleine border, weils gut aussieht */
@@ -21,16 +24,23 @@
 }
 .kontakt div div {
     border:none;
-    width: 390px;
+    width: auto;
 }
 .kontakt {
     display: flex;
-    flex-direction: column;  /* mach es trotz flex vertikal */
-    align-items: center;     /* Immer noch in die mitte packen (warum ist das bei divs immer so verdammmt schwer) */
-    background-image: url(bg.png); /* den Hintergrund setzen (ändern wir vielleicht noch) */
-}
+    /*flex-direction: column;*/  /* mach es trotz flex vertikal */
+    /*align-items: center;*/     /* Immer noch in die mitte packen (warum ist das bei divs immer so verdammmt schwer) */
+    width: 75vw;
+    flex-wrap: wrap; /* Erlaubt es, dass die divs in die nächste zeile springen wenn sie zu breit werden */
+}   
 body {
     background-color: aliceblue; /* genereller Hintergrund bei sachen wo das nicht extra angegeben wird */
+}
+#nestdiv {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-image: url(bg.png); /* den Hintergrund setzen (ändern wir vielleicht noch) */
 }
 .attraktion {
     display: flex; /* Alles in einem schönen grid artigem ding listen */
