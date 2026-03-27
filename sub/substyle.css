@@ -55,7 +55,7 @@ body {
     padding: 6px;
     padding-right: 8px;
     height: 25vh;
-    width: 45vh;
+    width: 30vw;
     display: flex; /* so machen, dass die elemente nebeneinander angezeigt werden */
     justify-content: center;
     /*overflow-x:scroll;*/ /* Das erlaubt ein fragwürdiges seitwärts scrollen */
@@ -199,3 +199,9 @@ body {
     border: solid 1px #000;
     border-radius: 5px;
     }
+audio {
+    border: none;
+    border-radius: 2px;
+    background-color: inherit;
+    
+}
