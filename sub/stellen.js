@@ -3,7 +3,7 @@ let opStunden = ["35h", "40h", "45h"];
 function changeStunden(type, id, wagearray) {
     let fulldiv = document.getElementById(id);
     let maindiv = fulldiv.querySelector(".lohndiv");
-    let lohnElement = fulldiv.querySelector(".Stundenlohn"); //finde den Tag
+    let lohnElement = fulldiv.querySelector(".Monatslohn"); //finde den Tag
     let lohn = lohnElement.innerText; // der text im element // Löhne, die man haben kann
     let stunden = maindiv.querySelector(".Stunden"); // Aktuelle Studnen
     if (wagearray.includes(lohn)) { // falls der lohn in den optionen für lohn ist, dann:
