@@ -5,6 +5,7 @@
     top: 0;
     gap: 20px;
     background-color: #daebf0;
+    z-index: 1;
 }
 #headerid a {
     text-decoration: none;
